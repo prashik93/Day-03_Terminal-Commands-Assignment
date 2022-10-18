@@ -1,4 +1,4 @@
-##! /bin/bash/ -x
+#! /bin/bash/ -x
 
 
 ## 1.
@@ -24,6 +24,6 @@ echo "JobTitle and OverTimePay :- $jobTitleAndOvertimePay"
 
 
 ## 4.
-#echo "------Print average BasePay------"
-#averageBasePay=`cat data.csv | awk '{sum+=$4} END{print sum/NR}'`
-#echo "Average BasePay is :- $averageBasePay"
+echo "------Print average BasePay------"
+averageBasePay=`cat data.csv | awk '{sum+=$4} END{print sum/NR}'`
+echo "Average BasePay is :- $averageBasePay"
