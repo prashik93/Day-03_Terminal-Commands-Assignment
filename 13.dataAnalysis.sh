@@ -19,11 +19,11 @@ echo "Aggregate total Pay of Captain :- $totalPayOfCaptain"
 
 ## 3.
 echo "------JobTitle and Overtimepay is between 7000 and 10000-----"
-jobTitleAndOvertimePay=`cat data.csv | awk '{print $3 "  "$5}' `
+jobTitleAndOvertimePay=`cat data.csv | awk '{print $3 " " $5}' | head -7 | tail -2`
 echo "JobTitle and OverTimePay :- $jobTitleAndOvertimePay"
 
 
 ## 4.
-echo "------Print average BasePay------"
-averageBasePay=`cat data.csv | awk '{sum+=$4} END{print sum/NR}'`
-echo "Average BasePay is :- $averageBasePay"
+#echo "------Print average BasePay------"
+#averageBasePay=`cat data.csv | awk '{sum+=$4} END{print sum/NR}'`
+#echo "Average BasePay is :- $averageBasePay"
